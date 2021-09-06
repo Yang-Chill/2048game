@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my2048</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="score">
+                <div class="now">
+                    <span class="label">SCORE</span>
+                    <span class="value">0</span>
+                </div>
+                <div class="best">
+                    <span class="label">BEST</span>
+                    <span class="value">0</span>
+                </div>
+                <div class="steps">
+                    <span class="label">STEPS</span>
+                    <span class="value">0</span>
+                </div>
+            </div>
+        </nav>
+        <div class="desc">
+            <p>
+                <strong>Play 2048 Game online</strong>
+                Join the numbers and get to the <strong>2048 tile!</strong>
+            </p>
+            <button class="restart">restart</button>
+        </div>
+        <main>
+            <div class="game-grid"><!--棋盘背景面板-->
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+            </div>
+            <div class="tile-container">
+                <!-- 内部是渲染过的格子 -->
+            </div>
+        </main>
+        <footer>
+            <img src="./images/ych.jpg" alt="">
+            <span>Enhanced by <strong>YCH</strong></span>
+        </footer>
+        <div class="mask status">
+            <div class="content">Game Over</div>
+            <button>Try again</button>
+        </div>
+    </div>
+    <script src="./scripts/tile.js"></script>
+    <script src="./scripts/grid.js"></script>
+    <script src="./scripts/render.js"></script>
+    <script src="./scripts/listener.js"></script>
+    <script src="./scripts/storage.js"></script>
+    <script src="./scripts/manager.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
